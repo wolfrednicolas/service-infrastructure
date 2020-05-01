@@ -1,0 +1,31 @@
+{
+    "name": "wnmd1987/serviceinfrastructure",
+    "description": "Complement that allows to manage keys to dynamic subaccounts of any service of any of the third party applications we handle",
+    "type": "package",
+    "license": "MIT",
+    "keywords": ["service"],
+    "authors": [
+        {
+            "name": "Wolfred Montilla",
+            "email": "wolfrednicolas@gmail.com"
+        }
+    ],
+        "require": {
+            "php": "^7.1.3"
+       }, 
+       "require-dev": { 
+              "phpunit/phpunit": "^7"
+       },
+       "autoload": { 
+              "psr-4": { 
+                     "wnmd1987\\serviceinfrastructure\\": "src"
+              } 
+       },
+      "extra": {
+        "laravel": {
+            "providers": [
+                "wnmd1987\\serviceinfrastructure\\InfrastructureServiceProvider"
+            ]
+        }
+      }
+}
